@@ -1,7 +1,7 @@
 var pet = 0;
 
 async function init() {
-    let getty_req = await fetch("https://getty.drewfitzgerald.co.nz/");
+    let getty_req = await fetch(`https://getty.drewfitzgerald.co.nz/?cache=${Math.random()}`);
     pet = parseInt(await getty_req.text());
 
     document.getElementById('c').innerHTML = pet;
@@ -16,7 +16,7 @@ function gatito() {
 }
 
 function pet_getty() {
-    fetch("https://getty.drewfitzgerald.co.nz/pet");
+    fetch(`https://getty.drewfitzgerald.co.nz/pet?cache=${Math.random()}`);
     pet++;
 
     document.getElementById('c').innerHTML = pet;
