@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_index.css">
     <title>Wellington College</title>
 </head>
+
 <body>
     <header>
         <nav>
-            <ul>
-                <h1>Wellington College</h1>
-                <a href="https://github.com/bvdlcoidetwf/bvdlcoidetwf.github.io" class="button">Github</a>
-            </ul>
+            <h2>Wellington College</h2>
+            <a href="https://github.com/bvdlcoidetwf/bvdlcoidetwf.github.io" class="button">Github</a>
+            <button class="button" onclick="pet_getty()">Pet Getty</button>
+            <a href="ArohasCar.html" class="button">Aroha's Car</a>
+            <button class="button" onclick="gatito()">Gatito?</button>
         </nav>
     </header>
+    <div class="image">
+            <img height="447px" width="670" src="gettyimages-1687139789-612x612.jpg"
+                alt="An image of getty. Getty is a cat">
+        </div>
+        <div class="pet-count">;
+            <span id="txt">GETTY PET COUNT: <span id='c'>0</span></span>
+            <button class="button" onclick="gatito()">Gatito?</button>
+            <button class="button" onclick="pet_getty()">Pet Getty</button>
+        </div>
+    <div class="hero-text" style="position: fixed; left:1em; top:45%;">
+        <h1>MEET GETTY.</h1>
+    </div>
+    
+    <script src="/gatito.js?cache=nocachethankyou"></script>
 </body>
+
 </html>
